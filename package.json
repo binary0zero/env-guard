@@ -1,5 +1,5 @@
 {
-  "name": "env-sentinel",
+  "name": "env-care",
   "version": "1.0.0",
   "description": "Super lightweight package to validate and type-check environment variables (.env). Ensures required vars exist and throws clear errors if missing or invalid.",
   "keywords": [
