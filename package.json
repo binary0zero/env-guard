@@ -1,0 +1,28 @@
+{
+  "name": "env-guard",
+  "version": "1.0.0",
+  "description": "Super lightweight package to validate and type-check environment variables (.env). Ensures required vars exist and throws clear errors if missing or invalid.",
+  "keywords": [
+    "env",
+    "dotenv",
+    "validation",
+    "type-check",
+    "config",
+    "environment",
+    "variables",
+    "safe-env",
+    "nodejs"
+  ],
+  "author": "Dennis Muuo dennismuuo.dev@gmail.com",
+  "license": "MIT",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binary0zero/env-guard.git"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "dotenv": "^17.2.2"
+  }
+}
