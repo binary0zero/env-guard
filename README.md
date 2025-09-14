@@ -1,4 +1,4 @@
-# 🌱 env-sentinel
+# env-sentinel
 
 **env-sentinel** is a **super lightweight Node.js package** that helps you **validate and type-check environment variables** from your `.env` file or system environment.
 
