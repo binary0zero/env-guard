@@ -1,5 +1,5 @@
 {
-  "name": "env-guard",
+  "name": "env-sentinel",
   "version": "1.0.0",
   "description": "Super lightweight package to validate and type-check environment variables (.env). Ensures required vars exist and throws clear errors if missing or invalid.",
   "keywords": [
@@ -19,10 +19,11 @@
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/binary0zero/env-guard.git"
+    "url": "https://github.com/binary0zero/env-sentinel.git"
   },
   "dependencies": {
     "chalk": "^5.6.2",
-    "dotenv": "^17.2.2"
+    "dotenv": "^17.2.2",
+    "env-guard": "file:env-guard-1.0.0.tgz"
   }
 }

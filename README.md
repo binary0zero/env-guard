@@ -1,10 +1,6 @@
-# 🌱 env-guard
+# 🌱 env-sentinel
 
-[![npm version](https://badge.fury.io/js/env-guard.svg)](https://badge.fury.io/js/env-guard)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js CI](https://github.com/dennismutuku2024/env-guard/workflows/Node.js%20CI/badge.svg)](https://github.com/dennismutuku2024/env-guard/actions)
-
-**env-guard** is a **super lightweight Node.js package** that helps you **validate and type-check environment variables** from your `.env` file or system environment.
+**env-sentinel** is a **super lightweight Node.js package** that helps you **validate and type-check environment variables** from your `.env` file or system environment.
 
 It ensures:
 - ✅ Required variables exist
@@ -17,7 +13,7 @@ This prevents hard-to-debug runtime issues caused by missing or invalid configur
 
 ---
 
-## 📖 Why env-guard?
+## 📖 Why env-sentinel?
 
 Almost every Node.js project relies on environment variables (`.env`) for sensitive data such as database URLs, API keys, ports, and secrets.
 
@@ -25,7 +21,7 @@ Almost every Node.js project relies on environment variables (`.env`) for sensit
 
 That leads to **silent failures** or worse — production crashes due to missing or incorrectly typed values.
 
-**env-guard** solves this by acting as a **type-safe guard** for your environment configuration. It ensures your app won't even start unless the required environment variables are valid.
+**env-sentinel** solves this by acting as a **type-safe guard** for your environment configuration. It ensures your app won't even start unless the required environment variables are valid.
 
 ---
 
@@ -45,13 +41,13 @@ That leads to **silent failures** or worse — production crashes due to missing
 ## 📦 Installation
 
 ```bash
-npm install env-guard
+npm install env-sentinel
 ```
 
 Or with yarn:
 
 ```bash
-yarn add env-guard
+yarn add env-sentinel
 ```
 
 ---
@@ -71,7 +67,7 @@ API_KEY=your-secret-key-here
 ### 2. Validate your environment variables
 
 ```js
-import { guard } from "env-guard";
+import { guard } from "env-sentinel";
 
 const env = guard({
   PORT: { type: "number", required: true },
@@ -147,7 +143,7 @@ An object with validated and type-cast environment variables.
 ### Basic Usage
 
 ```js
-import { guard } from "env-guard";
+import { guard } from "env-sentinel";
 
 const env = guard({
   APP_NAME: { type: "string", required: true },
@@ -195,7 +191,7 @@ console.log(`🔧 Debug: ${env.DEBUG ? 'ON' : 'OFF'}`);
 
 ```js
 import express from 'express';
-import { guard } from 'env-guard';
+import { guard } from 'env-sentinel';
 
 // Validate environment before starting server
 const env = guard({
@@ -221,10 +217,10 @@ app.listen(env.PORT, () => {
 
 ## 🧪 Type Safety with TypeScript
 
-env-guard comes with built-in TypeScript support:
+env-sentinel comes with built-in TypeScript support:
 
 ```typescript
-import { guard } from "env-guard";
+import { guard } from "env-sentinel";
 
 interface AppConfig {
   PORT: number;
@@ -253,7 +249,7 @@ const isProduction: boolean = env.NODE_ENV === "production";
 
 ## 🚨 Error Handling
 
-env-guard provides clear, actionable error messages:
+env-sentinel provides clear, actionable error messages:
 
 ```js
 try {
@@ -279,7 +275,7 @@ Common error scenarios:
 ## 📁 Project Structure
 
 ```
-env-guard/
+env-sentinel/
 ├── package.json         # Package metadata and dependencies
 ├── index.js            # Main library implementation
 ├── index.d.ts          # TypeScript type definitions
@@ -301,8 +297,8 @@ env-guard/
 
 ```bash
 # Clone the repository
-git clone https://github.com/dennismutuku2024/env-guard.git
-cd env-guard
+git clone https://github.com/dennismutuku2024/env-sentinel.git
+cd env-sentinel
 
 # Install dependencies
 npm install
@@ -342,8 +338,8 @@ Contributions are welcome! 🚀
 Found a bug or have a feature request?
 
 - 📧 **Email**: [dennismuuo.dev@gmail.com](mailto:dennismuuo.dev@gmail.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/dennismutuku2024/env-guard/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/dennismutuku2024/env-guard/discussions)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/dennismutuku2024/env-sentinel/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/dennismutuku2024/env-sentinel/discussions)
 
 ---
 
@@ -365,11 +361,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - Inspired by the need for better environment variable validation in Node.js
 - Thanks to all contributors and users of this package
 
-
-
 ---
 
-✅ **With env-guard, you'll never again forget a required `.env` variable.**  
+✅ **With env-sentinel, you'll never again forget a required `.env` variable.**  
 **Make your configuration safe, predictable, and developer-friendly.**
 
 ---
